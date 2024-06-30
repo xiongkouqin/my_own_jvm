@@ -4,7 +4,7 @@
 @file    :   zip_entry.py
 @time    :   2024/06/29 16:20:44
 @author  :   xiongkouqin 
-@Email   :   xiongkouqin413@gmail.com
+@email   :   xiongkouqin413@gmail.com
 @description   :   从zip/jar 文件中读取指定的class file
 JAR（Java Archive）文件本质上是一个ZIP文件
 '''

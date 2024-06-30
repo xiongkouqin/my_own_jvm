@@ -4,7 +4,7 @@
 @file    :   entry.py
 @time    :   2024/06/29 16:13:44
 @author  :   xiongkouqin 
-@Email   :   xiongkouqin413@gmail.com
+@email   :   xiongkouqin413@gmail.com
 @description   :   Entry接口, Python3 abc模块提供了抽象基类的支持。
 ABC: abstract base class
 '''

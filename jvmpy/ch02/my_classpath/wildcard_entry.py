@@ -4,8 +4,8 @@
 @file    :   wildcard_entry.py
 @time    :   2024/06/29 16:20:19
 @author  :   xiongkouqin 
-@Email   :   xiongkouqin413@gmail.com
-@description   :   /dir/* 形式，所以本质上也是 一个 CompositeEntry, 但是注意通配符路径不能提柜匹配子目录下的jar文件
+@email   :   xiongkouqin413@gmail.com
+@description   :   /dir/* 形式，所以本质上也是 一个 CompositeEntry, 但是注意通配符路径不能递归匹配子目录下的jar文件
 因此 简单来说，直接去继承 CompositeEntry
 然后调用super().__init__()
 这里因为不会有 path_seprator所以init里面只会初始化list

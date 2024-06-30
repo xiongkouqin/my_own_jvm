@@ -4,7 +4,7 @@
 @file    :   cmd.py
 @time    :   2024/06/26 00:56:17
 @author  :   xiongkouqin 
-@Email   :   xiongkouqin413@gmail.com
+@email   :   xiongkouqin413@gmail.com
 @description   :   命令行类
 '''
 

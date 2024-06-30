@@ -4,7 +4,7 @@
 @file    :   main.py
 @time    :   2024/06/26 00:57:16
 @author  :   xiongkouqin 
-@Email   :   xiongkouqin413@gmail.com
+@email   :   xiongkouqin413@gmail.com
 @description   :   主程序
 '''
 

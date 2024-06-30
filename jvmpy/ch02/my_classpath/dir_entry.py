@@ -4,7 +4,7 @@
 @file    :   dir_entry.py
 @time    :   2024/06/29 16:19:51
 @author  :   xiongkouqin 
-@Email   :   xiongkouqin413@gmail.com
+@email   :   xiongkouqin413@gmail.com
 @description   :   表示目录形式的类路径
 '''
 

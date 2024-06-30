@@ -65,5 +65,61 @@
 
 - restrain the value can be accepted: `parser.add_argument("-v", "--verbosity", type=int, choices=[0, 1, 2], help="increase output verbosity")`
 
-- 
+
+
+## CH02. 搜索class文件
+
+### 2.1 类路径
+
+Java虚拟机没有规定虚拟机从哪里寻找类，Oracle的虚拟机实现如下：按照搜索先后顺序
+
+- 启动类路径 bootstrap classapth 
+	- 默认对应jre/lib
+	- Java标准库
+- 扩展类路径 extension classpath 
+	- 默认在jre/lib/ext
+- 用户类路径 user classpath 
+	- 默认当前目录
+	- -cp来指定
+	- 可以指定多个 java -cp path/to/classes:lib/b
+
+### 2.2 准备工作
+
+1. 指定jre目录的位置
+	- -Xjre
+
+### 2.3 实现类路径
+
+类路径由三个小的路径构成，因此可以使用`组合模式`来实现类路径。
+
+#### 2.3.1 Entry接口
+
+有两个方法
+
+```java
+[]byte, Entry, error readClass(String className){
+  // 参数是class文件的相对路径，文件名有.class后缀
+  // 比如读取java.lang.Object, 传入的参数是java/lang/Object.class 
+  
+  // 返回值
+  // byte: 读到的字节数据
+  // Entry: 最终定位到class文件的Entry ??? 不确定是什么
+  // error 错误信息
+}
+
+toString()
+```
+
+另外有一个 newEntry方法
+
+- 根据参数创建不同类型的Entry实例
+- Entry接口有四个实现 
+	- DirEntry
+	- ZipEntry
+	- CompositeEntry
+	- WildcardEntry
+
+
+
+
 
